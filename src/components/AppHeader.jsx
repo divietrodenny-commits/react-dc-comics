@@ -14,14 +14,19 @@ export default function AppHeader() {
 
     return (
         <header>
-            <nav className="navbar">
-                <div className="container">
-                    <img src="/img/dc-logo.png" alt="DC logo" />
+            <nav className="navbar navbar-expand-lg bg-white">
+                <div className="container d-flex align-items-center">
+                    <a href="#" className="navbar-brand m-0">
+                        <img src="/img/dc-logo.png" alt="DC logo" />
+                    </a>
 
-                    <ul>
+                    <ul className="navbar-nav ms-auto gap-3">
                         {navLinks.map((link) => (
-                            <li key={link.id}>
-                                <a href={link.href}>{link.label}</a>
+                            <li key={link.id} className="nav-item">
+                                <a href={link.href}
+                                    className="nav-link text-uppercase fw-bold small">
+                                    {link.label}
+                                </a>
                             </li>
                         ))}
                     </ul>
