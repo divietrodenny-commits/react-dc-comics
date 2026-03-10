@@ -1,18 +1,38 @@
-import comics from './comics'
-export default function AppMain() {
+import comics from './comics';
+import ComicCard from './AppComicsCard';
 
+export default function AppMain() {
     return (
         <main>
             <section className="hero">
-                <img src="/img/jumbotron.jpg" alt="" />
+                <img src="/img/jumbotron.jpg" alt="DC heroes" />
             </section>
 
-            <h2>CURRENT SERIES</h2>
+            <section className="comics-section py-5 bg-dark">
+                <div className="container">
+                    <h2 className="text-uppercase text-white bg-primary px-3 py-2 d-inline-block">
+                        CURRENT SERIES
+                    </h2>
 
-            {comics.map((comic) => (
-                <div key={comic.id}>{comic.title}</div>
-            ))}
-            <button className="load_more">LOAD MORE</button>
+                    <div className="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4 mt-3">
+                        {comics.map((comic) => (
+                            <ComicCard
+                                key={comic.id}
+                                thumb={comic.thumb}
+                                title={comic.title}
+                                series={comic.series}
+                                price={comic.price}
+                            />
+                        ))}
+                    </div>
+
+                    <div className="text-center my-4">
+                        <button className="btn btn-primary text-uppercase small">
+                            LOAD MORE
+                        </button>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }
