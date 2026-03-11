@@ -9,3 +9,19 @@
   object-fit: cover;
   display: block;
 }
+
+.comics-section .card {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0;
+}
+
+.comics-section .card-img-top {
+  display: block;
+  width: 70%;
+  aspect-ratio: 1/2;
+  object-fit: cover;
+}

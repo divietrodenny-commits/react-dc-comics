@@ -11,7 +11,7 @@ export default function AppMain() {
             <section className="comics-section py-5 bg-dark">
                 <div className="container">
                     <h2 className="text-uppercase text-white bg-primary px-3 py-2 d-inline-block">
-                        CURRENT SERIES
+                        Current Seriers
                     </h2>
 
                     <div className="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4 mt-3">

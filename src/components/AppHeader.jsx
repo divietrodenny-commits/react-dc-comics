@@ -19,17 +19,18 @@ export default function AppHeader() {
                     <a href="#" className="navbar-brand m-0">
                         <img src="/img/dc-logo.png" alt="DC logo" />
                     </a>
-
-                    <ul className="navbar-nav ms-auto gap-3">
-                        {navLinks.map((link) => (
-                            <li key={link.id} className="nav-item">
-                                <a href={link.href}
-                                    className="nav-link text-uppercase fw-bold small">
-                                    {link.label}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
+                    <div className="collapse navbar-collapse" id="dcNavbar">
+                        <ul className="navbar-nav ms-auto gap-3">
+                            {navLinks.map((link) => (
+                                <li key={link.id} className="nav-item">
+                                    <a href={link.href}
+                                        className="nav-link text-uppercase fw-bold small">
+                                        {link.label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
