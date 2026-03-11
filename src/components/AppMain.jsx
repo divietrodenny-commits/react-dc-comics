@@ -2,6 +2,10 @@ import comics from './comics';
 import ComicCard from './AppComicsCard';
 
 export default function AppMain() {
+function loadMore() {
+    alert('Caricamento in corso')
+}
+
     return (
         <main>
             <section className="hero">
@@ -27,7 +31,7 @@ export default function AppMain() {
                     </div>
 
                     <div className="text-center my-4">
-                        <button className="btn btn-primary text-uppercase small">
+                        <button className="btn btn-primary text-uppercase small" onClick={loadMore}>
                             LOAD MORE
                         </button>
                     </div>
