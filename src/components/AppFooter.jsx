@@ -78,6 +78,39 @@ export default function AppFooter() {
                         </div>
                     </div>
                 </div>
+                <div className="footer-bottom py-3">
+                    <div className="container d-flex justify-content-between align-items-center">
+                        <button className="btn btn-outline-primary text-uppercase fw-semibold">
+                            Sign-up now!
+                        </button>
+
+                        <div className="d-flex align-items-center gap-3">
+                            <span className="text-uppercase fw-semibold text-primary">
+                                Follow us
+                            </span>
+
+                            <div className="d-flex align-items-center gap-2">
+                                <a href="#">
+                                    <img src="./img/footer-facebook.png" alt="Facebook" />
+                                </a>
+                                <a href="#">
+                                    <img src="./img/footer-twitter.png" alt="Twitter" />
+                                </a>
+                                <a href="#">
+                                    <img src="./img/footer-youtube.png" alt="YouTube" />
+                                </a>
+                                <a href="#">
+                                    <img src="./img/footer-pinterest.png" alt="Pinterest" />
+                                </a>
+                                <a href="#">
+                                    <img src="./img/footer-periscope.png" alt="Periscope" />
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </footer>
         </>
     );

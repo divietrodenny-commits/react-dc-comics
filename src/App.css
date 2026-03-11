@@ -1,3 +1,7 @@
+body {
+  background-color: #1c1c1c;
+}
+
 .hero {
   max-height: 400px;
   overflow: hidden;
@@ -54,6 +58,24 @@
   transform: translateX(40px);
 }
 
+.footer-bottom {
+  background-color: #303030;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom .btn {
+  border-radius: 0;
+  border-color: lightskyblue;
+  color: white;
+  font-size: 12px;
+  padding: 8px 18px;
+}
+
+.footer-bottom img {
+  height: 24px;
+  width: 24px;
+}
+
 @media (max-width: 768px) {
   .site-footer .footer-middle .container {
     flex-direction: column;
@@ -65,3 +87,4 @@
     margin-top: 20px;
   }
 }
+
