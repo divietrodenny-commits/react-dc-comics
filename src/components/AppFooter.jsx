@@ -1,10 +1,10 @@
 export default function AppFooter() {
     const barBlue = [
         { id: 1, icon: './img/buy-comics-digital-comics.png', label: 'Digital Comics' },
-        { id: 2, icon: './img/buy-comics-digital-comics.png', label: 'Digital Comics' },
-        { id: 3, icon: './img/buy-comics-digital-comics.png', label: 'Digital Comics' },
-        { id: 4, icon: './img/buy-comics-digital-comics.png', label: 'Digital Comics' },
-        { id: 5, icon: './img/buy-comics-digital-comics.png', label: 'Digital Comics' },
+        { id: 2, icon: './img/buy-comics-merchandise.png', label: 'DC Merchandise' },
+        { id: 3, icon: './img/buy-comics-subscriptions.png', label: 'Subscription' },
+        { id: 4, icon: './img/buy-comics-shop-locator.png', label: 'Comic Shop Locator' },
+        { id: 5, icon: './img/buy-dc-power-visa.svg', label: 'DC Power Visa' },
     ];
 
     const linksFooter = [
@@ -44,14 +44,16 @@ export default function AppFooter() {
 
     return (
         <>
-            <section className="bar_section">
-                <div className="bar_container">
-                    {barBlue.map((bar) => (
-                        <div key={bar.id} className="strip_bar">
-                            <img src={bar.icon} alt={bar.label} />
-                            <span>{bar.label}</span>
-                        </div>
-                    ))}
+            <section className="bg-primary text-white py-4">
+                <div className="container">
+                    <div className="row justify-content-between">
+                        {barBlue.map((bar) => (
+                            <div key={bar.id} className="col-6 col-md d-flex align-items-center mb-3">
+                                <img src={bar.icon} alt={bar.label} className="me-4" style={{ height: '40px' }} />
+                                <span className="text-uppercase fw-semibold small">{bar.label}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
