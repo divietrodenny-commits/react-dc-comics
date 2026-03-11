@@ -58,22 +58,24 @@ export default function AppFooter() {
             </section>
 
             <footer className="site-footer">
-                <div className="footer_middle">
-                    <div className="footer_links">
-                        {linksFooter.map((group) => (
-                            <div key={group.id} className="footer_column">
-                                <h4>{group.title}</h4>
-                                <ul>
-                                    {group.links.map((link, index) => (
-                                        <li key={index}>{link}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
+                <div className="footer-middle">
+                    <div className="container d-flex justify-content-between">
+                        <div className="footer-links d-flex">
+                            {linksFooter.map((group) => (
+                                <div key={group.id} className="footer-column me-4">
+                                    <h4 className="text-uppercase mb-4">{group.title}</h4>
+                                    <ul className="list-unstyled">
+                                        {group.links.map((link, index) => (
+                                            <li key={index}>{link}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
 
-                    <div className="footer_logo">
-                        <img src="./img/dc-logo-bg.png" alt="DC big logo" />
+                        <div className="footer_logo ms-auto">
+                            <img src="./img/dc-logo-bg.png" alt="DC big logo" />
+                        </div>
                     </div>
                 </div>
             </footer>
