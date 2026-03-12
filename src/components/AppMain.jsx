@@ -1,5 +1,5 @@
 import comics from './comics';
-import ComicCard from './ComicsCard';
+import ComicCard from './ComicCard';
 
 export default function AppMain() {
     function loadMore() {
