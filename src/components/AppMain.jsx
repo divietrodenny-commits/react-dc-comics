@@ -1,10 +1,10 @@
 import comics from './comics';
-import ComicCard from './AppComicsCard';
+import ComicCard from './ComicsCard';
 
 export default function AppMain() {
-function loadMore() {
-    alert('Caricamento in corso')
-}
+    function loadMore() {
+        alert('Caricamento in corso')
+    }
 
     return (
         <main>
